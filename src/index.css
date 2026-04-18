@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root{
+
+    --fonttype: courier;
+    --h1: bold;
+}
+body{
+  @apply leading-relaxed text-[#6366f1] bg-white;
+
+}
+
+h1{
+
+@apply font-extrabold text-2xl text-center py-10  text-blue-700;
+
+}
+h2{
+    @apply font-semibold text-neutral-800 py-3;
+}
+
+/* skills */
+.skills-container .samples{
+    @apply flex gap-2 py-3 flex-wrap w-60 border-t-2 border-t-neutral-100;
+}
+.skills-container .sample{
+  @apply border border-neutral-200 mb-6 py-2 px-4 mx-2 rounded-xl hover:shadow-xl hover:-translate-y-1 duration-750;
+}
+.skills-container span{
+    @apply bg-blue-200 px-3 rounded text-blue-700;
+    background: #68e6ffbe;
+}
+
+.skills-container> div{
+  @apply flex justify-center items-center;
+}
+
+
+
+.icons1 span{
+
+    @apply p-2 rounded-4xl ;
+    background-color: rgba(185, 176, 176, 0.317 );
+    animation: float 4s ease-in-out infinite;
+
+}
+
+
+
+  @keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); } /* Moves up 20px at the halfway point */
+  100% { transform: translateY(0px); }  /* Returns to starting position */
+}
+  
+
+
+
+.socials{
+  @apply flex h-20 w-44 grow-0 overflow-hidden 
+}
+.socials span{
+    @apply cursor-pointer text-3xl hover:rotate-12 hover:text-4xl hover:text-blue-700 duration-750;
+}
+
+/* Contact */
+label{
+  
+  @apply font-semibold py-3;
+}
+input, textarea, form button{
+  
+  @apply border p-2 px-2 rounded-lg border-amber-50 max-w-200 bg-neutral-50;
+}
+
+.contact-id{
+  @apply bg-neutral-200 p-2 rounded-2xl text-blue-600 font-semibold;
+
+}
+form button{
+  @apply bg-blue-700 text-xl text-white font-semibold cursor-pointer active:bg-blue-200
+ }
+
+ /* Featured Apps */
+
+.featured-container{
+  @apply flex items-center justify-center p-3;}
+
+.contact a{
+  @apply hover:font-semibold
+}
